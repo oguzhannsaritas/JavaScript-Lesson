@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="div1"> </div>
+    <div id="div2"> </div>
+
+
+
+    <script>
+        var a = ["Üzüm", "Elma", "Erik", "Şeftali", "Kayısı"];
+
+        var b = [100, 15, 45, 6, 89, 42];
+        var e = [{
+                marka: "Mercedes",
+                yıl: 2010,
+            },
+            {
+                marka: "Honda",
+                yıl: 2005,
+            },
+            {
+                marka: "Renault",
+                yıl: 2015,
+            }
+        ];
+
+        document.getElementById("div1").innerHTML = a + "<br><br>";
+
+        a.sort(); /*Elemanları alıp alfabetik sıraya koyma görevi sağlar. */
+
+        document.getElementById("div2").innerHTML = a + "<br><br>";
+
+
+        a.reverse();
+        /* Ters çevirir.Yani En son elemanı 
+        ilk eleman yapar sıra o şekil devam eder sonuncu elemanı ilk eleman olur */
+
+        document.getElementById("div1").innerHTML = a;
+
+        document.getElementById("div1").innerHTML = b + "<br><br>";
+
+        b.sort(function (x, y) {
+            return x - y
+        }); /* Küçükten Büyüğe doğru yazdırır.*/
+        /* Büyükten küçüğe doğru yazdırmak için
+        {return y-x} olarak yazmalıyız */
+
+        var c = b[0]; /* En düşük değeri yazdırır. */
+        var c = b[b.length - 1]; /*En yüksek değeri verir. */
+
+        document.getElementById("div2").innerHTML = b + "<br><br>";
+
+        document.write(c);
+
+        function arabalar() {
+
+            document.getElementById("div1").innerHTML =
+
+                e[0].marka + " " + e[0].yıl + "<br>" +
+                e[1].marka + " " + e[1].yıl + "<br>" +
+                e[2].marka + " " + e[2].yıl + "<br>";
+
+        };
+
+        function sırala() {
+            e.sort(function (a, b) {
+                return a.yıl - b.yıl});
+                 /*Yıllara göre küçükten büyüğe gösterme */
+
+            arabalar();
+
+        };
+        arabalar();
+        sırala();
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

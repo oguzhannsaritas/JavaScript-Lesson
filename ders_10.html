@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+var meyveler = ["Elma", "Armut", "Muz", "Şeftali" ];
+var sebzeler = ["Ispanak", "Pırasa"];
+
+var meyve1 = meyveler[0]; /*meyvelerdeki arrayı 0 olan elmayı stringe cevirme */
+
+
+document.write(meyve1);
+
+document.write(meyveler[1]); /* meyveler deki arrayı 1 olanı alarak yazdırma oda armut olur */
+
+var deneme = meyveler.length; /*eleman sayısını verirr */
+
+document.write(deneme);
+
+var deneme = meyveler.push("kayısı"); /* string içine string ekleme  */
+document.write(meyveler);
+var deneme = meyveler.pop();  /*son elemanı ekrandan siler */
+document.write(meyveler);
+
+var deneme = meyveler.shift(); /* İlk Elemanı siler */
+document.write(meyveler);
+
+var deneme = meyveler.unshift("Karpuz"); /* 0 ıncı indexe yeni eleman atama 
+                                        yani ilk eleman atama */
+document.write(meyveler);
+ 
+var deneme = meyveler.slice(1); /* 1nci indexden sonraki texti yazdırmak için */
+document.write(deneme);
+
+var deneme = meyveler.concat(" ", sebzeler); /*Stringleri Birleştirme */
+document.write(deneme);
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

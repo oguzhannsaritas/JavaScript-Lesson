@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="div1"></div>
+    <div id="div2"></div>
+
+
+
+
+
+    <script>
+
+
+
+        var sayı = [45, 60, 27, 36, 102, 55, 8];
+        
+        function üçileçarp(value, index, array) {
+
+            return value * 3;
+
+                        /* verilen değerleri 3 katı olarak yazdırma
+                        
+                        return value >30 ; yazıldıgında 30 dan buyuk olanları
+                        yazar  */
+
+
+
+        }
+
+        var sayı2 = sayı.map(üçileçarp); /*sayı.filter(üçileçarp); yazıldıgında 
+
+                                        sayıları filtreme yapar 
+                                        sayı.reduce(üçileçarp); hepsini toplar*/
+
+
+        document.getElementById("div2").innerHTML = sayı2;
+        document.write(sayı);
+
+
+        var yazı ="";
+
+        function yazdır(value, index, array) {
+
+yazı = yazı + value + "<br>" ;
+
+
+
+        }
+
+        sayı.forEach(yazdır);
+        document.getElementById("div1").innerHTML = yazı;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

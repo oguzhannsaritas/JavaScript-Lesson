@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>UYGULAMA 6</title>
+    <style type="text/css">
+        #div1 {
+            width: 30%;
+            height: 150px;
+            background-color: darkgrey;
+            position: absolute;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 170px;
+            margin-left: 450px;
+            font-size: 25px;
+            padding-top: 60px;
+        }
+
+        #btn1 {
+            font-size: 20px;
+            margin-left: 150px;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+    <div id=div1>
+
+        <label style="font-size: 25px;" for="kullaniciAdi">Kullanıcı Adı : </label>
+        <input id="kullaniciAdi" type="text">
+        <br><br>
+
+        <label for="parola">Parola : </label>
+        <input style="    margin-left: 70px;" id="parola" type="password">
+        <br><br>
+        <button onclick="girisOnayi()" id="btn1">GİRİŞ YAP</button>
+
+
+
+
+        <script type="text/javascript">
+            var kullanicilar = [{
+                    kullaniciAdi: "admin",
+                    parola: "admin"
+                },
+                {
+                    kullaniciAdi: "Şafak ",
+                    parola: "123"
+                },
+                {
+                    kullaniciAdi: "Oral",
+                    parola: "123"
+                }
+            ];
+
+            var girilenKullaniciAdi;
+            var girilenParola;
+
+
+
+            function kontrolEt() {
+                girilenKullaniciAdi = document.getElementById("kullaniciAdi").value;
+                girilenParola = document.getElementById("parola").value;
+
+
+                for (x of kullanicilar) {
+                    if ((x.kullaniciAdi == girilenKullaniciAdi) && (x.parola == girilenParola)) {
+                        return true;
+                    }
+
+
+                }
+                
+
+
+
+
+
+
+
+            }
+
+            function girisOnayi() {
+
+                kontrolEt();
+
+                if (kontrolEt()) {
+                    window.open("ders_45_uygulama5.html", "_self");
+
+                } else {
+                    alert("Kullanıcı adı veya şifre hatalı. Yeniden deneyiniz...");
+                }
+
+            }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+var x = 5;
+var y = 4 ;
+
+
+
+        
+/*
+if(x<y) {
+
+document.write("x y den küçüktür.");
+
+}
+else{
+
+    document.write("x y den büyüktür.");
+
+
+}
+*/
+
+// var yas = window.prompt("Lütfen yaşınızı giriniz.", 0);
+
+var saat = new Date().getHours();
+
+document.write(saat);
+
+if((6 < saat) && (saat < 12)) {
+
+document.write("Günaydın.");
+
+}
+else if((12 <= saat) && (saat < 19) ){
+
+document.write("İyi günler..");
+
+
+}
+
+else if((19 <= saat) && (saat < 23) ){
+
+document.write("İyi Akşamlar..")
+
+
+}
+
+
+
+else{
+
+document.write("İyi geceler...");
+
+
+}
+
+
+
+
+
+    </script>
+</body>
+
+</html>

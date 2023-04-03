@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="div1"></div>
+
+    <script>
+        var yazi = " ";
+
+        var meyveler = ["Elma", "Üzüm", "Kiraz", "Armut", "Şeftali"];
+
+
+
+      /* for (i = 0; i < meyveler.length; i++) {
+
+
+            yazi += meyveler[i] + "<br>";
+
+
+
+
+
+        }  */
+
+
+var a ;
+  
+/*  for(a in meyveler){
+
+yazi += meyveler[a] + "<br>"
+
+}     */
+
+
+for (a of meyveler) {
+    
+yazi += a + "<br>"
+
+}
+
+
+
+
+
+
+        document.getElementById("div1").innerHTML = yazi
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

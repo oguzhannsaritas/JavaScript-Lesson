@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var x = "Javascript ile web tasarım öğreniyorum web";
+        var y = "Bidolu yazılım ile öğreniyorum.";
+        var z = "a,b,c,d";
+
+
+
+        /*  var a = x.length;  karakter uzunluğunu bizi söyler boşluklarda
+        karakter olarak sayılır .     */
+
+        /* var a = x.indexOf("web");  seçilen karakterin kaçıncı karakter
+        oldugunu belirtir bize. */
+
+        /* var a = x.lastIndexOf("web");  şecilen "web " karakteri değere bakar 
+        ilk webi gördüğünde devarm eder başka web karakteri görürse onu alır
+        last zaten son anlamına gelir sonuncu "web" değerini al demektir.  */
+
+        /*   var a = x.search("web"); seçileen "web" karakteri değere bakar
+        ilk "web" gördüğünde onu alır . başka bir "web" değeri olsa bile
+        ilk gördüğü "web" değerini alır ve kaçıncı oldugunu gösteriri.  */
+
+        /*   var a = x.slice("8");   seçilen 8 ci değerden sonrasını yazıdırır.
+        yani  "Javascript ile web tasarım öğreniyorum web"  olan yazının 8 ci 
+        ddeğerinden sonra yazdırır.  var a = x.slice("8,15") yazdıgımızda 
+        8 ile 15 inci değerleri arasındakini yazdırır. */
+
+        /*   var a = x.substring  ("8");  .slice ile aynı */
+
+        /*     var a =x.substr(8 , 5); .slice ile aynı tek fark 
+        (8) değer verince 8 ci karakterden sonra yazdırır. ama 
+        (8, 5) verildiginde 8.ci karakterden sonra 5 karakter yazdırır
+        tek fark budur.  */
+
+
+        /*   var a = x.replace("web", "ama"); değiştirme olarak yapılır
+        istediğim değeri istediğim değere değştirme . Sistem web i seçtiğimde
+        ilk webi "ama " olarak değişitirir.  */
+
+        /*  var a = x.replace(/web/g, "ama"); seçilen web değerlerinin
+        hepsini "ama" olarak değiştirir.  */
+
+        /*  var a = x.toUpperCase();   Tüm harfleri büyük yazma . */
+
+        /*   var a = x.toLowerCase();  Tüm harfleri küçük yazma . */
+
+
+        /*   var a = x.concat(" ", y);  İki tane stringi yan yana yazma  */
+
+        /*  var a = x.trim();   Stringin başında ve sonunda buluna  boşlukları siler. */
+
+        /*    var a = x.charAt(8);  seçilen değerin sadece harfini yazdırır. */
+
+       /* var a = x.charCodeAt(8);  Benim 8 indexdeki harfi alıyor Bunun UTF Kod sisteminde 
+       karşılık gelen integer değerini döndürüyor bana . */
+
+      /*    var a = z.split(",");   Bu z ye git virgülden sonrasını hep ayır
+      yani bu gidicek z ye burda a yı görcek arkasından vir gül görcek ayırcak
+      a yenş Array'im 0.ncı indexi olcuak.
+      Sonra b yi alıcak  1.nci indexi olucak.
+      sonra virgülü görecek tekrar ayırcak.
+      C yi alıcak böyle böyle devam edicek.
+
+      EKRANA YAZIDIRIRKEN ŞU ŞEKİL YAZILACAK;
+
+
+       document.write(a[0]);  ekranda sadece a nın cıkıcak. değere bir verirsen
+       b yi yazıdırıcak. */
+
+       document.write(a);
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
